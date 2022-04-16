@@ -5,3 +5,11 @@
     position: absolute;
     bottom: 0;
 }
+
+.cactus {
+    width: 80px;
+    height: 80px;
+    background: red;
+    position: absolute;
+    bottom: 0;
+}
