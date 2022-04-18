@@ -46,10 +46,10 @@ let createCactus = () => {
 
     let leftInterval = setInterval(() => {
 
-        if(cactusPosition < -80){
+        if(cactusPosition < -60){
             clearInterval(leftInterval);
             background.removeChild(cactus);
-        } else if (cactusPosition > 0 && cactusPosition < 80 && position < 80) {
+        } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
             // Game Over 
             clearInterval(leftInterval);
             document.body.innerHTML = '<h1 class="game-over">Fim de jogo!</h1>';
