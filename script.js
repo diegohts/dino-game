@@ -16,7 +16,7 @@ let jump = () => {
     let upInterval = setInterval(() => {
         if(position >= 150){
             clearInterval(upInterval);
-            // descendo 
+            
             let downInterval = setInterval(() => {
                 if(position <= 0) {
                     clearInterval(downInterval);
@@ -27,9 +27,8 @@ let jump = () => {
                 }
             }, 20);
         } else {
-            // subindo
+            
             position += 20;
-
             dino.style.bottom = position + 'px';
         }    
     }, 20);
@@ -50,7 +49,6 @@ let createCactus = () => {
             clearInterval(leftInterval);
             background.removeChild(cactus);
         } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
-            // Game Over 
             clearInterval(leftInterval);
             document.body.innerHTML = '<h1 class="game-over">Fim de jogo!</h1>';
         } else {
